@@ -171,13 +171,138 @@ Explanation: Matches exact lowercase `rahul`. Without `BINARY`, MySQL ignores ca
 SELECT COUNT(*) FROM users;
 ```
 Explanation: Counts total rows.
-
 -
 
 ```sql
 SELECT MAX(age), MIN(age) FROM users;
 ```
 Explanation: Finds highest & lowest values.
+-
+
+```sql
+SELECT AVG(age) FROM users;
+```
+Explanation: Finds average age.
+
+---
+
+## 🟡 LEVEL 10 — GROUP BY
+
+```sql
+SELECT age, COUNT(*)
+FROM users
+GROUP BY age;
+```
+Explanation: Groups rows by age and counts each group.
+
+---
+
+## 🟡 LEVEL 11 — JOINS (RELATIONSHIP)
+```sql
+CREATE TABLE orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  amount INT
+);
+```
+Explanation: Creates related table using `user_id`.
+-
+
+```sql
+SELECT users.name, orders.amount
+FROM users
+JOIN orders
+ON users.id = orders.user_id;
+```
+Explanation: Combines data from two tables using a common key.
+
+---
+
+## 🔵 LEVEL 12 — PAGINATION
+```sql
+SELECT * FROM users
+ORDER BY id
+LIMIT 5 OFFSET 0;
+```
+Explanation: Page 1 → first 5 records.
+-
+
+```sql
+SELECT * FROM users
+ORDER BY id
+LIMIT 5 OFFSET 5;
+```
+Explanation: Page 2 → skip first 5, show next 5.
+
+---
+
+## 🔵 LEVEL 13 — INDEX (PERFORMANCE)
+```sql
+CREATE INDEX idx_email ON users(email);
+```
+Explanation: Speeds up search on `email`.
+-
+
+```sql
+SHOW INDEX FROM users;
+```
+Explanation: Shows indexes on the table.
+-
+
+## 🔵 LEVEL 14 — USERS & SECURITY
+
+```sql
+CREATE USER 'appuser'@'localhost'
+IDENTIFIED BY 'password';
+```
+Explanation: Creates a non-root user for applications.
+-
+
+```sql
+GRANT ALL PRIVILEGES ON testdb.*
+TO 'appuser'@'localhost';
+FLUSH PRIVILEGES;
+```
+Explanation: Gives access only to one database (safe).
+
+---
+
+## 🔵 LEVEL 15 — BACKUP & RESTORE (CMD)
+
+```bash
+mysqldump -u root testdb > testdb.sql
+```
+Explanation: Creates database backup.
+-
+
+```bash
+mysql -u root testdb < testdb.sql
+```
+Explanation: Restores backup.
+
+---
+
+## 🔥 LEVEL 16 — PRO LEVEL
+### Subquery
+
+```bash
+SELECT * FROM users
+WHERE age > (SELECT AVG(age) FROM users);
+```
+Explanation: Finds users older than average age.
+-
+
+### Transaction (safety)
+
+```sql
+START TRANSACTION;
+DELETE FROM users WHERE id = 1;
+ROLLBACK;
+```
+Explanation: Undo changes if something goes wrong.
+
+---
+
 
 
 
