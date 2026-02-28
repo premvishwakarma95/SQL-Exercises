@@ -126,3 +126,12 @@ Explanation: Updates age only for matching rows. ⚠️ Without `WHERE`, all row
 
 ## 🟢 LEVEL 6 — DELETE (REMOVE DATA)
 
+```sql
+DELETE FROM users WHERE name = 'Harsh';
+```
+Explanation: Deletes only matching rows.
+-
+```sql
+DELETE FROM users;
+```
+Explanation: Deletes all records (table remains).
