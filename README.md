@@ -85,5 +85,31 @@ Explanation: Inserts multiple rows in one query (faster).
 
 ---
 
+## 🟢 LEVEL 4 — SELECT (READ DATA)
+```sql
+SELECT * FROM users;
+```
+Explanation: Fetches only specific columns.
+-
+```sql
+SELECT name, email FROM users;
+```
+Explanation: Fetches only specific columns.
+-
+```sql
+SELECT * FROM users WHERE age > 23;
+```
+Explanation: Filters rows using conditions.
+-
+```sql
+SELECT * FROM users ORDER BY age DESC;
+```
+Explanation: Sorts data by age (highest first).
+-
+```sql
+SELECT * FROM users LIMIT 2;
+```
+Explanation: Returns only first 2 rows.
+-
 
-
+## 🟢 LEVEL 5 — UPDATE (MODIFY DATA)
