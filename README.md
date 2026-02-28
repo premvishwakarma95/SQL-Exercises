@@ -74,5 +74,16 @@ VALUES ('Rahul', 'rahul@gmail.com', 22);
 Explanation: Adds one record to the table.
 -
 Multiple rows (best practice)
+```sql
+INSERT INTO users (name, email, age)
+VALUES
+('Shubham', 'shubham@gmail.com', 26),
+('Harsh', 'harsh@gmail.com', 25),
+('Rahul', 'rahul@gmail.com', 22);
+```
+Explanation: Inserts multiple rows in one query (faster).
+
+---
+
 
 
