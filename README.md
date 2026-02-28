@@ -135,3 +135,49 @@ Explanation: Deletes only matching rows.
 DELETE FROM users;
 ```
 Explanation: Deletes all records (table remains).
+
+---
+
+## 🟡 LEVEL 7 — SEARCH & FILTERING
+```sql
+SELECT * FROM users WHERE name LIKE 'R%';
+```
+Explanation: Finds names starting with R.
+-
+```sql
+SELECT * FROM users WHERE age BETWEEN 22 AND 26;
+```
+Explanation: Selects age in a range.
+-
+```sql
+SELECT * FROM users WHERE age IN (22, 25);
+```
+Explanation: Matches exact values.
+
+---
+
+## 🟡 LEVEL 8 — CASE SENSITIVE QUERY
+
+```sql
+SELECT * FROM users
+WHERE BINARY name = 'rahul';
+```
+Explanation: Matches exact lowercase `rahul`. Without `BINARY`, MySQL ignores case.
+
+---
+
+## 🟡 LEVEL 9 — AGGREGATE FUNCTIONS
+```sql
+SELECT COUNT(*) FROM users;
+```
+Explanation: Counts total rows.
+
+-
+
+```sql
+SELECT MAX(age), MIN(age) FROM users;
+```
+Explanation: Finds highest & lowest values.
+
+
+
