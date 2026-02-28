@@ -120,6 +120,9 @@ UPDATE users
 SET age = 27
 WHERE name = 'Shubham';
 ```
-Explanation:
-Updates age only for matching rows. 
-⚠️ Without `WHERE`, all rows change.
+Explanation: Updates age only for matching rows. ⚠️ Without `WHERE`, all rows change.
+
+---
+
+## 🟢 LEVEL 6 — DELETE (REMOVE DATA)
+
