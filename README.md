@@ -63,3 +63,16 @@ DROP TABLE users;
 ```
 Explanation: Deletes the table and all its data.
 
+---
+
+## 🟢 LEVEL 3 — INSERT (CREATE DATA)
+Single row
+```sql
+INSERT INTO users (name, email, age)
+VALUES ('Rahul', 'rahul@gmail.com', 22);
+```
+Explanation: Adds one record to the table.
+-
+Multiple rows (best practice)
+
+
