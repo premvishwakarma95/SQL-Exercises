@@ -110,6 +110,16 @@ Explanation: Sorts data by age (highest first).
 SELECT * FROM users LIMIT 2;
 ```
 Explanation: Returns only first 2 rows.
--
+
+---
 
 ## 🟢 LEVEL 5 — UPDATE (MODIFY DATA)
+
+```sql
+UPDATE users
+SET age = 27
+WHERE name = 'Shubham';
+```
+Explanation:
+Updates age only for matching rows. 
+⚠️ Without `WHERE`, all rows change.
