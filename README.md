@@ -65,6 +65,12 @@ DROP TABLE users;
 ```
 Explanation: Deletes the table and all its data.
 
+```sql
+ALTER TABLE users
+ADD COLUMN gender VARCHAR(10);
+```
+Explanation: Add column in existng table, this command will add gender column in table.
+
 ---
 
 ## 🟢 LEVEL 3 — INSERT (CREATE DATA)
