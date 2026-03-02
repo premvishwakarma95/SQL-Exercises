@@ -156,7 +156,9 @@ Explanation: Updates age only for matching rows. ⚠️ Without `WHERE`, all row
 DELETE FROM users WHERE name = 'Harsh';
 ```
 Explanation: Deletes only matching rows.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 DELETE FROM users;
 ```
