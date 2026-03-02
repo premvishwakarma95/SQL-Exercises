@@ -63,15 +63,21 @@ Explanation:
 - VARCHAR → text
 - INT → number
 
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SHOW TABLES;
 ```
 Explanation: Lists tables inside the current database.
 
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 DROP TABLE users;
 ```
 Explanation: Deletes the table and all its data.
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 ALTER TABLE users
