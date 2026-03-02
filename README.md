@@ -1,5 +1,5 @@
 # SQL-Exercises
-First Install Xampp to access mysql in Terminal only then you can use mysql in terminal. And also then you can use mysql in localhost and also you can in Nodejs application. After this learn ORMs (prisma) and we use npm package name mysql2 to connect our NodeJS application to mysql database. There is also one another thing that we need to remember the thing is If you have installed Xampp in local sytem then you need to configure Environment variables. After that  only you can use this mysql. And also we need to remember one more thing like ORM, we need to learn about it.
+First Install Xampp to access mysql in Terminal only then you can use mysql in terminal. SQL Injection
 -
 
 ## 🧱 LEVEL 0 — CONNECT & EXIT
