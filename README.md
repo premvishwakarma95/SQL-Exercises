@@ -80,7 +80,9 @@ INSERT INTO users (name, email, age)
 VALUES ('Rahul', 'rahul@gmail.com', 22);
 ```
 Explanation: Adds one record to the table.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 Multiple rows (best practice)
 ```sql
 INSERT INTO users (name, email, age)
