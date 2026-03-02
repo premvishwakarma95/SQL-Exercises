@@ -59,7 +59,7 @@ Explanation:
 SHOW TABLES;
 ```
 Explanation: Lists tables inside the current database.
--
+
 ```sql
 DROP TABLE users;
 ```
