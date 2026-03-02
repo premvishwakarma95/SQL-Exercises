@@ -7,7 +7,7 @@ First Install Xampp to access mysql in Terminal only then you can use mysql in t
 mysql -u root
 ```
 Explanation: Connects to MySQL server using the root user.
--
+
 ```sql
 exit;
 ```
@@ -20,17 +20,17 @@ Explanation: Safely exits the MySQL shell.
 SHOW DATABASES;
 ```
 Explanation: Lists all databases available on the server.
--
+
 ```sql
 CREATE DATABASE testdb;
 ```
 Explanation: Creates a new database named `testdb`.
--
+
 ```sql
 USE testdb;
 ```
 Explanation: Selects `testdb` so all tables/queries apply to it.
--
+
 ```sql
 DROP DATABASE testdb;
 ```
