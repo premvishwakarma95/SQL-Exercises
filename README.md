@@ -171,12 +171,16 @@ Explanation: Deletes all records (table remains).
 SELECT * FROM users WHERE name LIKE 'R%';
 ```
 Explanation: Finds names starting with R.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SELECT * FROM users WHERE age BETWEEN 22 AND 26;
 ```
 Explanation: Selects age in a range.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SELECT * FROM users WHERE age IN (22, 25);
 ```
@@ -199,13 +203,15 @@ Explanation: Matches exact lowercase `rahul`. Without `BINARY`, MySQL ignores ca
 SELECT COUNT(*) FROM users;
 ```
 Explanation: Counts total rows.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 SELECT MAX(age), MIN(age) FROM users;
 ```
 Explanation: Finds highest & lowest values.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 SELECT AVG(age) FROM users;
@@ -234,7 +240,8 @@ CREATE TABLE orders (
 );
 ```
 Explanation: Creates related table using `user_id`.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 SELECT users.name, orders.amount
@@ -253,7 +260,8 @@ ORDER BY id
 LIMIT 5 OFFSET 0;
 ```
 Explanation: Page 1 → first 5 records.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 SELECT * FROM users
@@ -269,13 +277,15 @@ Explanation: Page 2 → skip first 5, show next 5.
 CREATE INDEX idx_email ON users(email);
 ```
 Explanation: Speeds up search on `email`.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 SHOW INDEX FROM users;
 ```
 Explanation: Shows indexes on the table.
--
+
+---
 
 ## 🔵 LEVEL 14 — USERS & SECURITY
 
@@ -284,7 +294,8 @@ CREATE USER 'appuser'@'localhost'
 IDENTIFIED BY 'password';
 ```
 Explanation: Creates a non-root user for applications.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```sql
 GRANT ALL PRIVILEGES ON testdb.*
@@ -301,7 +312,8 @@ Explanation: Gives access only to one database (safe).
 mysqldump -u root testdb > testdb.sql
 ```
 Explanation: Creates database backup.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 ```bash
 mysql -u root testdb < testdb.sql
@@ -318,7 +330,7 @@ SELECT * FROM users
 WHERE age > (SELECT AVG(age) FROM users);
 ```
 Explanation: Finds users older than average age.
--
+
 
 ### Transaction (safety)
 
