@@ -81,7 +81,7 @@ VALUES ('Rahul', 'rahul@gmail.com', 22);
 ```
 Explanation: Adds one record to the table.
 
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
 Multiple rows (best practice)
 ```sql
@@ -99,27 +99,35 @@ Explanation: Inserts multiple rows in one query (faster).
 ```sql
 SELECT * FROM users;
 ```
-Explanation: Fetches only specific columns.
--
+Explanation: Fetches all columns.
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SELECT name, email FROM users;
 ```
 Explanation: Fetches only specific columns.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SELECT * FROM users WHERE age > 23;
 ```
 Explanation: Filters rows using conditions.
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
 SELECT * FROM users ORDER BY age DESC;
 ```
 Explanation: Sorts data by age (highest first).
--
+
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+
 ```sql
-SELECT * FROM users LIMIT 2;
+SELECT * FROM users LIMIT 2 OFFSET 1;
 ```
-Explanation: Returns only first 2 rows.
+Explanation: Returns only first 2 rows and offset means page number.
 
 ---
 
