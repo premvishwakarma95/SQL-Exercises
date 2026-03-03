@@ -55,6 +55,14 @@ CREATE TABLE users (
   email VARCHAR(100),
   age INT
 );
+
+// Table that stores foreign key
+CREATE TABLE orders (
+    id CHAR(36) PRIMARY KEY,
+    user_id CHAR(36),
+    order_date DATETIME,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
 ```
 Explanation:
 - id → unique row identifier
