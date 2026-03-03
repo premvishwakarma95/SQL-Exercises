@@ -1,6 +1,6 @@
 # SQL-Exercises
 First Install Xampp to access mysql in Terminal only then you can use mysql in terminal. SQL Injection
--
+
 
 ## 🧱 LEVEL 0 — CONNECT & EXIT
 ```sql
