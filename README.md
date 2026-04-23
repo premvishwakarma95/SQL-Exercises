@@ -359,4 +359,15 @@ Explanation: Undo changes if something goes wrong.
 
 
 
+# Overview.
+```
+INSERT INTO users (name, email, age, gender) VALUES ("Prem", "prem@gmail.com", 22, "Male"), ("Test", "test@gmail.com", 22, "Male");
+SELECT * FROM users;
+SELECT name, email FROM users;
+SELECT name, email FROM users WHERE age > 18;
+UPDATE users SET age = 27 WHERE name = 'Shubham';
+DELETE FROM users WHERE id = 1;
 
+// Pagination here limit is number of document, offset means page number;
+SELECT * FROM users LIMIT 2 OFFSET 1;
+```
