@@ -368,6 +368,6 @@ SELECT name, email FROM users WHERE age > 18;
 UPDATE users SET age = 27 WHERE name = 'Shubham';
 DELETE FROM users WHERE id = 1;
 
-// Pagination here limit is number of document, offset means page number;
+// Pagination here limit is number of document, offset means number of rows or record to skip;
 SELECT * FROM users LIMIT 2 OFFSET 1;
 ```
