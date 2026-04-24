@@ -404,4 +404,11 @@ SELECT users.name, orders.product
 FROM users
 FULL OUTER JOIN orders
 ON users.id = orders.user_id;
+
+// Join with filter.
+SELECT u.name, o.product
+FROM users u
+JOIN orders o
+ON u.id = o.user_id
+WHERE u.name = 'Prem';
 ```
