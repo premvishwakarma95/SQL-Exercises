@@ -372,7 +372,7 @@ DELETE FROM users WHERE id = 1;
 SELECT * FROM users LIMIT 2 OFFSET 1;
 ```
 
-Joins.
+# Joins.
 - A JOIN in SQL is used to combine data from two or more tables based on a related column.
 ```sql
 // Only returns matching records
