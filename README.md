@@ -322,14 +322,14 @@ Explanation: Gives access only to one database (safe).
 
 ## 🔵 LEVEL 15 — BACKUP & RESTORE (CMD)
 
-```bash
+```sql
 mysqldump -u root testdb > testdb.sql
 ```
 Explanation: Creates database backup.
 
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
 
-```bash
+```sql
 mysql -u root testdb < testdb.sql
 ```
 Explanation: Restores backup.
@@ -339,7 +339,7 @@ Explanation: Restores backup.
 ## 🔥 LEVEL 16 — PRO LEVEL
 ### Subquery
 
-```bash
+```sql
 SELECT * FROM users
 WHERE age > (SELECT AVG(age) FROM users);
 ```
@@ -360,7 +360,7 @@ Explanation: Undo changes if something goes wrong.
 
 
 # Overview.
-```
+```sql
 INSERT INTO users (name, email, age, gender) VALUES ("Prem", "prem@gmail.com", 22, "Male"), ("Test", "test@gmail.com", 22, "Male");
 SELECT * FROM users;
 SELECT name, email FROM users;
