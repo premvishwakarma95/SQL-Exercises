@@ -371,3 +371,36 @@ DELETE FROM users WHERE id = 1;
 // Pagination here limit is number of document, offset means number of rows or record to skip;
 SELECT * FROM users LIMIT 2 OFFSET 1;
 ```
+
+Joins.
+```sql
+// Only returns matching records
+SELECT users.name, orders.name
+FROM users
+INNER JOIN orders
+ON users.id = orders.user_id;
+
+---
+
+// Returns ALL records from left table + matching from right
+SELECT users.name, orders.product
+FROM users
+LEFT JOIN orders
+ON users.id = orders.user_id;
+
+---
+
+// Returns ALL records from right table + matching from left
+SELECT users.name, orders.product
+FROM users
+RIGHT JOIN orders
+ON users.id = orders.user_id;
+
+---
+
+// All records from both sides
+SELECT users.name, orders.product
+FROM users
+FULL OUTER JOIN orders
+ON users.id = orders.user_id;
+```
