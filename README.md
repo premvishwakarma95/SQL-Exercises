@@ -426,6 +426,7 @@ WHERE u.name = 'Prem'
 ```
 
 ---
+## ✅ Most important interview/use-case functions
 
 | Function       | Purpose           |
 | -------------- | ----------------- |
