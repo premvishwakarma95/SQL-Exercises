@@ -441,3 +441,12 @@ WHERE u.name = 'Prem'
 | `CASE`         | Conditional logic |
 | `ROW_NUMBER()` | Ranking           |
 
+```sql
+SELECT class,
+       COUNT(*) AS total_students,
+       AVG(marks) AS average_marks,
+       MAX(marks) AS highest_marks
+FROM students
+GROUP BY class
+HAVING COUNT(*) > 5;
+```
