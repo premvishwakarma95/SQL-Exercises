@@ -424,3 +424,19 @@ WHERE u.name = 'Prem'
   AND o.product = 'Laptop';
 
 ```
+
+---
+
+| Function       | Purpose           |
+| -------------- | ----------------- |
+| `COUNT()`      | Count rows        |
+| `SUM()`        | Total             |
+| `AVG()`        | Average           |
+| `MIN()`        | Minimum           |
+| `MAX()`        | Maximum           |
+| `GROUP BY`     | Group rows        |
+| `HAVING`       | Filter groups     |
+| `COALESCE()`   | Handle null       |
+| `CASE`         | Conditional logic |
+| `ROW_NUMBER()` | Ranking           |
+
