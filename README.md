@@ -475,3 +475,11 @@ SELECT MAX(salary) AS highest_salary,
        MIN(salary) AS lowest_salary
 FROM employees;
 ```
+Use HAVING to filter grouped data
+```sql
+SELECT department,
+       COUNT(*) AS total_employees
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 3;
+```
