@@ -456,3 +456,9 @@ SELECT class, COUNT(*) AS total_students
 FROM students
 GROUP BY class;
 ```
+Find total marks of each class
+```sql
+SELECT class, SUM(marks) AS total_marks
+FROM students
+GROUP BY class;
+```
