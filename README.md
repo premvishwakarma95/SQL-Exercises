@@ -462,3 +462,10 @@ SELECT class, SUM(marks) AS total_marks
 FROM students
 GROUP BY class;
 ```
+Find average salary department-wise
+```sql
+SELECT department,
+       AVG(salary) AS average_salary
+FROM employees
+GROUP BY department;
+```
