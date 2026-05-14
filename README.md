@@ -450,3 +450,9 @@ FROM students
 GROUP BY class
 HAVING COUNT(*) > 5;
 ```
+Count students in each class
+```sql
+SELECT class, COUNT(*) AS total_students
+FROM students
+GROUP BY class;
+```
