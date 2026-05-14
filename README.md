@@ -469,3 +469,9 @@ SELECT department,
 FROM employees
 GROUP BY department;
 ```
+Find highest and lowest salary
+```sql
+SELECT MAX(salary) AS highest_salary,
+       MIN(salary) AS lowest_salary
+FROM employees;
+```
