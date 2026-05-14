@@ -483,3 +483,9 @@ FROM employees
 GROUP BY department
 HAVING COUNT(*) > 3;
 ```
+Handle NULL values using COALESCE()
+```sql
+SELECT name,
+       COALESCE(phone_number, 'Not Available') AS phone
+FROM customers;
+```
