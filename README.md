@@ -489,3 +489,15 @@ SELECT name,
        COALESCE(phone_number, 'Not Available') AS phone
 FROM customers;
 ```
+Use CASE statement
+Handle NULL values using COALESCE()
+```sql
+SELECT name,
+       marks,
+       CASE
+           WHEN marks >= 90 THEN 'Excellent'
+           WHEN marks >= 60 THEN 'Pass'
+           ELSE 'Fail'
+       END AS result
+FROM students;
+```
