@@ -1,4 +1,4 @@
-
+// users table
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -7,11 +7,13 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+// categories table
 CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100)
 );
 
+// products table
 CREATE TABLE products (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -20,6 +22,7 @@ CREATE TABLE products (
     category_id INT REFERENCES categories(id)
 );
 
+// orders table
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id),
@@ -27,6 +30,7 @@ CREATE TABLE orders (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+// order_items
 CREATE TABLE order_items (
     id SERIAL PRIMARY KEY,
     order_id INT REFERENCES orders(id),
