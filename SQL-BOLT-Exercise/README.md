@@ -40,3 +40,11 @@ Like operator used to find incasesensitive. example - small and uppercase both.
 ```sql
 SELECT * FROM movies WHERE Director LIKE 'Toy Story%';
 ```
+- Find All movies that are not directed by John Lasseter.
+```sql
+SELECT * FROM movies WHERE Director != 'John Lasseter';
+```
+
+---
+
+## Filtering and sorting Query results
