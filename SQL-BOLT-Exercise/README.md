@@ -25,3 +25,9 @@ SELECT * FROM movies WHERE Year NOT BETWEEN 2000 AND 2010 ;
 ```sql
 SELECT * FROM movies WHERE Id IN (2, 4, 6);
 ```
+- Find other movies that are not in list.
+```sql
+SELECT * 
+FROM movies
+WHERE movie_id NOT IN (1, 3, 5);
+```
