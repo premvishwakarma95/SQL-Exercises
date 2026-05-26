@@ -69,3 +69,15 @@ WHERE salary > 50000
 ORDER BY salary DESC
 LIMIT 3 OFFSET 2;
 ```
+
+- List all directors of movies (alphabetically), without duplicates
+```sql
+SELECT DISTINCT director FROM movies
+ORDER BY director ASC;
+```
+- List the last four movies released (ordered from most recent to least)
+```sql
+SELECT title, year FROM movies
+ORDER BY year DESC
+LIMIT 4;
+```
