@@ -55,6 +55,7 @@ WHERE condition
 ORDER BY column ASC
 LIMIT 5 OFFSET 10;
 ```
+- `DISTINCT` - is used to remove duplicate values from the result. Query - `SELECT DISTINCT column_name FROM table_name;`.
 - `ORDER BY` - Used to sort the result. Query - `ORDER BY age`.
 - `ASC` - Ascending order (small → large, A → Z). Query - `ORDER BY age ASC`.
 - `DESC` - Descending order (large → small, Z → A). Query - `ORDER BY age DESC`.
