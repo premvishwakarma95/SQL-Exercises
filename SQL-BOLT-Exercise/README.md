@@ -81,3 +81,9 @@ SELECT title, year FROM movies
 ORDER BY year DESC
 LIMIT 4;
 ```
+- List the next five Pixar movies sorted alphabetically
+```sql
+SELECT title FROM movies
+ORDER BY title ASC
+LIMIT 5 OFFSET 5;
+```
