@@ -89,5 +89,8 @@ LIMIT 5 OFFSET 5;
 ```
 - List the third and fourth largest cities (by population) in the United States and their population.
 ```sql
-SELECT city, population, country FROM north_american_cities WHERE country = 'United States' ORDER BY population DESC LIMIT 2 OFFSET 2;
+SELECT city, population, country FROM north_american_cities
+WHERE country = 'United States'
+ORDER BY population DESC
+LIMIT 2 OFFSET 2;
 ```
