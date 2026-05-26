@@ -31,3 +31,7 @@ SELECT *
 FROM movies
 WHERE movie_id NOT IN (1, 3, 5);
 ```
+- Find first 5 movies.
+```sql
+SELECT * FROM movies LIMIT 5;
+```
