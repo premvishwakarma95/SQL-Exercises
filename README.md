@@ -1,6 +1,12 @@
 # SQL-Exercises
 First Install Xampp to access mysql in Terminal only then you can use mysql in terminal. SQL Injection, SQL -> mysql2 -> ORM (prisma)
 
+---
+
+## For SQL Practice.
+https://sqlbolt.com/lesson/select_queries_introduction
+
+---
 
 ## 🧱 LEVEL 0 — CONNECT & EXIT
 ```sql
