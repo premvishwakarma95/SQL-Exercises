@@ -48,3 +48,23 @@ SELECT * FROM movies WHERE Director != 'John Lasseter';
 ---
 
 ## Filtering and sorting Query results
+```sql
+SELECT column, another_column
+FROM mytable
+WHERE condition
+ORDER BY column ASC
+LIMIT 5 OFFSET 10;
+```
+- `ORDER BY` - Used to sort the result. Query - `ORDER BY age`.
+- `ASC` - Ascending order (small → large, A → Z). Query - `ORDER BY age ASC`.
+- `DESC` - Descending order (large → small, Z → A). Query - `ORDER BY age DESC`.
+- `LIMIT` - Restricts the number of rows returned. Query - `LIMIT 5`.
+- `OFFSET` - Skips rows before starting to return results. Query - `LIMIT 5 OFFSET 10`
+- Full Example
+```sql
+SELECT name, salary
+FROM employees
+WHERE salary > 50000
+ORDER BY salary DESC
+LIMIT 3 OFFSET 2;
+```
