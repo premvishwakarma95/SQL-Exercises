@@ -35,3 +35,8 @@ WHERE movie_id NOT IN (1, 3, 5);
 ```sql
 SELECT * FROM movies LIMIT 5;
 ```
+- Find movie name that starts with 'Toy Story' or can say find all 'Toy Story' movie.
+Like operator used to find incasesensitive. example - small and uppercase both.
+```sql
+SELECT * FROM movies WHERE Director LIKE 'Toy Story%';
+```
