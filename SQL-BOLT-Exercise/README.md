@@ -118,3 +118,18 @@ FROM table1
 INNER JOIN table2
 ON table1.column = table2.column;
 ```
+- Find the domestic and international sales for each movie
+```sql
+SELECT title, domestic_sales, international_sales 
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+```
+- List all the movies by their ratings in descending order
+```sql
+SELECT title, rating
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+ORDER BY rating DESC;
+```
