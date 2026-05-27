@@ -100,4 +100,12 @@ LIMIT 2 OFFSET 2;
 ## Multi-table queries with JOINs.
 Using the JOIN clause in a query, we can combine row data across two separate tables using this unique key.
 <img width="1456" height="380" alt="image" src="https://github.com/user-attachments/assets/f2f53f69-a1f5-4077-ac67-aa07170cedd9" />
+### TYPES OF JOINS.
+- Inner Join
+- Outer Join  
+Types of `OUTER JOIN`.
+- LEFT JOIN
+- RIGHT JOIN
+- FULL JOIN
 
+### INNER JOIN
