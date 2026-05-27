@@ -108,7 +108,7 @@ Types of `OUTER JOIN`.
 - RIGHT JOIN
 - FULL JOIN
 
-### INNER JOIN
+### INNER JOIN - (A ∩ B) - Only common rows.
 It is used to combine rows from two tables only when matching data exists in both tables.  
 - Example - Give me only the common matching records  
 - Syntax
@@ -133,3 +133,27 @@ FROM movies
     ON movies.id = boxoffice.movie_id
 ORDER BY rating DESC;
 ```
+
+### LEFT JOIN - (A+(A∩B)) - All left rows + matched right rows.
+- all rows from the left table
+- matching rows from the right table
+- if no match exists → right table columns become NULL
+- Syntax
+```sql
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+```
+- Find rating of all movies.
+```sql
+SELECT 
+    movies.title,
+    boxoffice.rating
+FROM movies
+LEFT JOIN boxoffice
+ON movies.id = boxoffice.movie_id;
+```
+
+### RIGHT JOIN - (B+(A∩B)) - All right rows + matched right rows.
+
