@@ -181,3 +181,18 @@ ON table1.column = table2.column;
 ```
 
 ## A short note on NULLs
+- `IS NULL`
+- `IS NOT NULL`
+- Find the name and role of all employees who have not been assigned to a building 
+```sql
+SELECT name, role FROM employees
+WHERE building IS NULL;
+```
+- Find the names of the buildings that hold no employees
+```sql
+SELECT DISTINCT building_name
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
+```
