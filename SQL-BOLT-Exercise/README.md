@@ -166,3 +166,16 @@ FROM table1
 RIGHT JOIN table2
 ON table1.column = table2.column;
 ```
+
+### FULL JOIN - (A∪B) - Keep everything.
+- all rows from the left table
+- all rows from the right table
+- matched rows combined
+- unmatched rows filled with NULL
+- syntax
+```sql
+SELECT columns
+FROM table1
+FULL JOIN table2
+ON table1.column = table2.column;
+```
