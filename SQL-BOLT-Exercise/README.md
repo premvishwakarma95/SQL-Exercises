@@ -137,7 +137,7 @@ ORDER BY rating DESC;
 ### LEFT JOIN - (A+(A∩B)) - All left rows + matched right rows.
 - all rows from the left table
 - matching rows from the right table
-- if no match exists → right table columns become NULL
+- if no match exists → right table columns become `NULL`
 - Syntax
 ```sql
 SELECT columns
@@ -156,4 +156,13 @@ ON movies.id = boxoffice.movie_id;
 ```
 
 ### RIGHT JOIN - (B+(A∩B)) - All right rows + matched right rows.
-
+- all rows from the right table
+- matching rows from the left table
+- if no match exists → left table columns become `NULL`
+- syntax
+```sql
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+```
