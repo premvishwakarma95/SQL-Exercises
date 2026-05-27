@@ -209,3 +209,7 @@ FROM movies
   JOIN boxoffice
     ON movies.id = boxoffice.movie_id;
 ```
+
+---
+
+## Queries with aggregates.
