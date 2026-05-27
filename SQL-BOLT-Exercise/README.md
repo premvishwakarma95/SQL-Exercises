@@ -180,6 +180,8 @@ FULL JOIN table2
 ON table1.column = table2.column;
 ```
 
+---
+
 ## A short note on NULLs
 - `IS NULL`
 - `IS NOT NULL`
@@ -195,4 +197,15 @@ FROM buildings
   LEFT JOIN employees
     ON building_name = building
 WHERE role IS NULL;
+```
+
+---
+
+## Queries with expressions
+List all movies and their ratings in percent
+```sql
+SELECT title, rating * 10 AS rating_percent
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
 ```
