@@ -110,4 +110,11 @@ Types of `OUTER JOIN`.
 
 ### INNER JOIN
 It is used to combine rows from two tables only when matching data exists in both tables.  
-Example - Give me only the common matching records
+- Example - Give me only the common matching records  
+- Syntax
+```sql
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+```
