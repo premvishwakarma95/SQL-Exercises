@@ -179,3 +179,5 @@ FROM table1
 FULL JOIN table2
 ON table1.column = table2.column;
 ```
+
+## A short note on NULLs
