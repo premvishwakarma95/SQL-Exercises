@@ -213,4 +213,4 @@ FROM movies
 ---
 
 ## Queries with aggregates.
-We use `GROUP BY` and also have function like min, max
+We use `GROUP BY` and also have function like min, max and avg
