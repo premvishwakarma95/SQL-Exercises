@@ -213,3 +213,4 @@ FROM movies
 ---
 
 ## Queries with aggregates.
+We use `GROUP BY` and also have function like min, max
